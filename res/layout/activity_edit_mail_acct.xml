@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_appbg" >
+    <TextView android:id="@+id/edit_new_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_new_accounts"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+    />
+
+    <Spinner
+        android:id="@+id/AcctTypeSelectorE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/button_deleteAcctE"
+        android:layout_marginTop="52dp" />
+
+    <Button
+        android:id="@+id/button_cancelAcctE"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/passwordConfirmE"
+        android:background="@color/set_bttnbg"
+        android:text="@string/button_cancelAcct" />
+
+    <TextView
+        android:id="@+id/passwordE"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/passwordBoxE"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:text="@string/password"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordBoxE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordConfirmE"
+        android:layout_alignParentLeft="true"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft= "2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" > >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/emailAddyBoxE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordE"
+        android:layout_alignParentLeft="true"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft= "2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" > >
+   	    
+        <requestFocus/>
+   </EditText>
+
+    <TextView
+        android:id="@+id/emailAddressE"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/emailAddyBoxE"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:text="@string/emailAddress"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passwordConfirmE"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/passwordBoxConfirmE"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:text="@string/passwordConfirm"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chosen_Name_AcctE"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/chosenNameBoxE"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:text="@string/chosen_Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_deleteAcctE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/set_bttnbg"
+        android:text="@string/button_deleteAcct" />
+
+    <EditText
+        android:id="@+id/passwordBoxConfirmE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chosen_Name_AcctE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft= "2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" />
+
+    <TextView
+        android:id="@+id/accountTypeE"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/AcctTypeSelectorE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="68dp"
+        android:gravity="bottom"
+        android:text="@string/acctType"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/chosenNameBoxE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AcctTypeSelectorE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:hint="@string/hint_chosen_name"
+        android:inputType="text"
+        android:paddingLeft= "2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" />
+
+    <Button
+        android:id="@+id/button_saveAcctE"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/chosen_Name_AcctE"
+        android:background="@color/set_bttnbg"
+        android:text="@string/button_saveAcct" />
+
+</RelativeLayout>

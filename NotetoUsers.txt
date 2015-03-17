@@ -1,0 +1,17 @@
+Sesame is an app which lets you access web services such as gmail, ubmail etc. on your pc without having to enter the password every single time.
+
+SesameClient is an android app which connects to SesameServer running on PC via Bluetooth. 
+
+So for sesame to work you need to pair two devices via bluetooth before you can use SesameClient.
+
+If you face any issues e.g. app crashing etc. it's most likely because phone isn't connected to the the PC.
+
+FYI, On Mac- to connect to bluetooth you may need to enable Tethering on your android phone.So, if tethering is not enable Mac will not let you connect to bluetooth.
+
+user instructions after installing the app.
+1. When you use sesame app for the first time, you need to create the pattern, you will need to enter the pattern every time to access any sesame services.
+2. then the app will ask you to connect to the pc. Phone must be 'paired and connected' with the pc for this step to work.
+
+3. Then it would take you to list of accounts, as you don't have any accounts set up yet initially,
+First goto setup accounts button on upper right corner of the screen (it's actually a button with three dots) and set up an account e.g. (gmail) after setting it up..you can click on Open button and if server was working, it would open up a new window and enter your credentials. 
+So now, you can access the website.

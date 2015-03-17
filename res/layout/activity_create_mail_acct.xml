@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_appbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/edit_new_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="@string/edit_new_accounts"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/accountType"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="bottom"
+        android:text="@string/acctType"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/AcctTypeSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:text="@string/emailAddress"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailAddyBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom"
+        android:text="@string/password"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" />
+
+    <TextView
+        android:id="@+id/passwordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/passwordBoxConfirm"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:text="@string/passwordConfirm"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordBoxConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" />
+
+    <TextView
+        android:id="@+id/chosen_Name_Acct"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/chosenNameBox"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:text="@string/chosen_Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/chosenNameBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_cancelAcct"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:background="@color/set_bttnbg"
+        android:ems="10"
+        android:hint="@string/hint_chosen_name"
+        android:inputType="text"
+        android:paddingLeft="2dp"
+        android:textCursorDrawable="@drawable/custom_cursor" />
+
+    <Button
+        android:id="@+id/button_cancelAcct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:background="@color/set_bttnbg"
+        android:text="@string/button_cancelAcct" />
+
+    <Button
+        android:id="@+id/button_doneAcct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/set_bttnbg"
+        android:text="@string/button_done" />
+
+</LinearLayout>

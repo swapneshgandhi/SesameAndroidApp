@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="@string/title_accounts"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_accounts"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_doneAcct"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_doneAcct"
+        android:paddingLeft="5dp"
+        android:text="@string/title_accounts" />
+    
+    <Button
+        android:id="@+id/button_doneAcct"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:background="#444"
+        android:text="@string/button_done"
+        android:textColor="#fff"
+        android:layout_above="@id/title_accounts"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button_addAcct"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="58dp"
+        android:background="#444"
+        android:text="@string/button_addAcct"
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/current_Accounts_List"
+        android:layout_width="106dp"
+        android:layout_height="112dp"
+        android:layout_above="@+id/button_addAcct"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_doneAcct"
+        android:stackFromBottom="true" >
+
+    </ListView>
+
+</RelativeLayout>

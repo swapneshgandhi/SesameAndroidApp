@@ -1,0 +1,9 @@
+Sesame Client:
+
+Client needs a android-lockpattern library (is part of the sesameclient project tree), for the pattern lock to work.
+
+Android-lockpattern needs to be imported in eclipse as a library project, and in sesameclient properties -> android it should be specified as library to be used.
+
+Android-lockpattern also currently contains code for database- in SesameDbAdapter class, this was necessary, as to verify user's pattern we try to open the database. So if the password user enters, opens the database, it's a valid password, otherwise not.
+
+We use sqlcipher library for encrypting the database it has 3 libraries- in the libs folder of the project.

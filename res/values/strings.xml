@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SeSaMeClient</string>
+    <string name="User_Name">USERNAME</string>
+    <string name="Pass_Word">PASSWORD</string>
+    <string name="Sign_IN">Connect</string>
+    <string name="Enter_hint1">Enter Username</string>
+    <string name="Enter_hint2">Enter Password</string>
+    <string name="menu_settings">Settings</string>
+    <string name="ubmail">ubmail</string>
+    <string name="gmail">GMAIL</string>
+    <string name="fb">FACEBOOK</string>
+    <string name="twitter">TWITTER</string>
+    <string name="title_activity_accounts">AccountsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_activity_create_mail_acct">CreateMailAcctActivity</string>
+    <string name="enter_email">Enter EmailID</string>
+    <string name="enter_alias">Enter Alias</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="enter_pwd">Enter Password</string>
+    <string name="Log_in">Sign In</string>
+    <string name="edit_new_accounts">Edit &amp; Create Account</string>
+    <string name="emailAddress">email address / username: </string>
+    <string name="password">password: </string>
+    <string name="passwordConfirm">confirm password:</string>
+    <string name="chosen_Name">chosen name for account: </string>
+    <string name="hint_chosen_name">Name used in the accounts list</string>
+    <string name="button_cancelAcct">Cancel</string>
+    <string name="button_saveAcct">Save</string>
+    <string name="button_deleteAcct">Delete</string>
+    <string name="button_signin">Sign IN</string>
+    <string name="button_done">Done</string>
+    <string name="title_activity_manage_acct">ManageAcctActivity</string>
+    <string name="title_accounts">Click on Account to Edit or Delete!</string>
+    <string name="pickedAcct">Chosen Account: </string>
+    <string name="button_addAcct">Add New Account</string>
+    <string name="button_editAcct">Edit Account</string>
+    <string name="button_removeAcct">Remove Account</string>
+    <string name="no_accts">No Accounts Exist! Make a new one!</string>
+    <string name="title_activity_edit_mail_acct">EditMailAcctActivity</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="title_activity_setup_accounts">SetupAccountsActivity</string>
+    <string name="manageAccts">Setup Accounts</string>
+    <string name="title_activity_account2">Account2Activity</string>
+    <string name="killConnection">Disconnect Device</string>
+    <string name="enter_pattern">Enter Pattern</string>
+    <string name="create_pattern">Create Pattern</string>
+    <string name="forgot_pattern">Forgot Pattern</string>
+    <string name="paired_dev">Choose Device</string>
+    <string name="title_activity_multiple_paired_devices">MultiplePairedDevicesActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_choose_paired_device">ChoosePairedDeviceActivity</string>
+    <string name="title_activity_choose_device">ChooseDeviceActivity</string>
+    <string name="dev_done">Done</string>
+    <color name="set_appbg"> #444444</color>
+    <color name="set_bttnbg"> #FFFFFF</color>
+    <color name="set_cursor"> #000000</color>
+    <string name="open">Open</string>
+     <string name="acctType">Account Type:</string>
+
+</resources>

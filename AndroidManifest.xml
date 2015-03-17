@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sesameclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.sesameclient.SigninActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.AccountsActivity"
+            android:label="@string/title_activity_accounts" >
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.AccountActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_account"
+            android:parentActivityName="com.example.sesameclient.SigninActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sesameclient.SigninActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.CreateMailAcctActivity"
+            android:label="@string/title_activity_create_mail_acct"
+            android:parentActivityName="com.example.sesameclient.AccountActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sesameclient.AccountActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.ManageAcctActivity"
+            android:label="@string/title_activity_manage_acct"
+            android:parentActivityName="com.example.sesameclient.AccountActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sesameclient.AccountActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.EditMailAcctActivity"
+            android:label="@string/title_activity_edit_mail_acct"
+            android:parentActivityName="com.example.sesameclient.ManageAcctActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sesameclient.ManageAcctActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.SetupAccountsActivity"
+            android:label="@string/title_activity_setup_accounts" >
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.Account2Activity"
+            android:label="@string/title_activity_account2"
+            android:parentActivityName="com.example.sesameclient.ManageAcctActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sesameclient.ManageAcctActivity" />
+        </activity>
+        <activity
+            android:name="group.pals.android.lib.ui.lockpattern.LockPatternActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="user"
+            android:theme="@style/Alp.Theme.Dialog.Dark" >
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.MultiplePairedDevicesActivity"
+            android:label="@string/title_activity_multiple_paired_devices" >
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.ChoosePairedDeviceActivity"
+            android:label="@string/title_activity_choose_paired_device"
+            android:parentActivityName="com.example.sesameclient.SigninActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sesameclient.SigninActivity" />
+        </activity>
+        <activity
+            android:name="com.example.sesameclient.ChooseDeviceActivity"
+            android:label="@string/title_activity_choose_device"
+            android:screenOrientation="user"
+            android:theme="@style/Alp.Theme.Dialog.Dark" >
+        </activity>
+    </application>
+
+</manifest>
